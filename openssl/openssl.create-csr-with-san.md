@@ -1,4 +1,4 @@
-# openssl-csr-with-alternative-names-one
+# openssl: Generate csr with alternative names
 
 ```
 openssl req -new -sha256 -nodes -out example.com.csr -newkey rsa:2048 -keyout example.com.key -config <(
@@ -28,4 +28,5 @@ DNS.2 = www.example.com
 EOF
 )
 ```
+
 [source](https://www.endpoint.com/blog/2014/10/30/openssl-csr-with-alternative-names-one)

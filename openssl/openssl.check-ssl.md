@@ -6,4 +6,4 @@ If you have to check the certificate with STARTTLS, then just do
 or for a standard secure smtp port:
 `openssl s_client -connect mail.example.com:465`
 
-[Source](http://serverfault.com/questions/131627/how-to-inspect-remote-smtp-servers-tls-certificate)
+[source](http://serverfault.com/questions/131627/how-to-inspect-remote-smtp-servers-tls-certificate)

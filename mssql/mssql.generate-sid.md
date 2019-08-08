@@ -1,1 +1,3 @@
-SELECT NEWID();
+# Generate new SID
+
+`SELECT NEWID();`

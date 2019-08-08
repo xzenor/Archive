@@ -1,6 +1,7 @@
-Source: https://support.microsoft.com/en-us/help/918992/how-to-transfer-logins-and-passwords-between-instances-of-sql-server
+# How to transfer logins and passwords between instances of sql server
 
-
+## Create stored procedure
+```sql
 -- Start of Stored Procedure 
 USE master
 GO
@@ -138,9 +139,12 @@ DEALLOCATE login_curs
 RETURN 0
 GO
 -- End of Stored Procedure
+```
 
-
-
-
+## Run stored procedure
+```sql
 -- Run the following statement in the same or a new query window: 
 EXEC sp_help_revlogin
+```
+
+[source](https://support.microsoft.com/en-us/help/918992/how-to-transfer-logins-and-passwords-between-instances-of-sql-server)

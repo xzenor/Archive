@@ -1,4 +1,4 @@
-EXAMPLES
+# EXAMPLES
 
-- GRANT
-grant all privileges on database.* to someuser@localhost identified by 'somepassword';
+## GRANT
+`grant all privileges on database.* to someuser@localhost identified by 'somepassword';`
