@@ -1,4 +1,4 @@
-# [https://www.stephenwagner.com/2018/08/21/windows-server-2012-r2-net-windows-updates-fail-error-0x80092004/](Source)
+# [Source](https://www.stephenwagner.com/2018/08/21/windows-server-2012-r2-net-windows-updates-fail-error-0x80092004/)
 
 You may notice on Windows Server 2012 R2, when applying Windows Updates that one or more .NET updates may fail with error code 0x80092004. This issue may affect all, or only some of your Windows Server 2012 R2 servers.
 When troubleshooting this, you may notice numerous specific errors such as “Couldn’t find the hash of component: NetFx4-PenIMC”, or errors with a CAB file. These errors will probably come from update KB4054566 and KB4340558.
