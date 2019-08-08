@@ -1,5 +1,6 @@
-# source From <https://www.endpoint.com/blog/2014/10/30/openssl-csr-with-alternative-names-one> 
+# openssl-csr-with-alternative-names-one
 
+```
 openssl req -new -sha256 -nodes -out example.com.csr -newkey rsa:2048 -keyout example.com.key -config <(
 cat <<-EOF
 [req]
@@ -26,4 +27,5 @@ DNS.1 = example.com
 DNS.2 = www.example.com
 EOF
 )
-
+```
+[source](https://www.endpoint.com/blog/2014/10/30/openssl-csr-with-alternative-names-one)
