@@ -1,3 +1,8 @@
+# List certificates and the iis bindings they are linked to
+
+## Run in administrative powershell shell
+
+```powershell
 import-module WebAdministration
 
 Function ListCertBindings
@@ -34,4 +39,4 @@ Function ListCertBindings
 }
 
 ListCertBindings
-
+```
