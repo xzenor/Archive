@@ -4,7 +4,7 @@ List the modulus of the certificate
 `openssl x509 -noout -modulus -in server.crt`
 
 List the modulus of the private key  
-`$ openssl rsa -noout -modulus -in server.key`
+`openssl rsa -noout -modulus -in server.key`
 
 They should match.
 
