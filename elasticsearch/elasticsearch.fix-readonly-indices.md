@@ -1,4 +1,4 @@
-# fix read-only indices
+# fix read-only index
 
 ## Error message
 `{"type":"cluster_block_exception","reason":"blocked by: [FORBIDDEN/12/index read-only / allow delete (api)];"}`
