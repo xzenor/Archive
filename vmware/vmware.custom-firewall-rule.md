@@ -1,3 +1,5 @@
+# Adding a custom firewall rule (ESX 6.5)
+
 1. Log in to the ESXi host with root credentials using an SSH client.
 Navigate to /etc/vmware/firewall using the command:  
 `cd /etc/vmware/firewall/`
