@@ -41,13 +41,13 @@ Note: This example uses the vi editor.
 ```
 Where:
 
-**id** is the rule name as it will show up in the interface.
+**id** is the rule name as it will show up in the interface.  
 **enabled** is the default status when the service is first loaded.  
 **required** indicates whether the service is required and cannot be disabled.  
 **rule id** indicates the rules required and starts with 0000, 0001, 0002, and so on.  
 **protocol** indicates if it is TCP/UDP protocol (If you need same port number for TCP and UDP, you must have two rules.)  
 **direction** specifies if incoming or outgoing port. (You must have a separate rule for incoming and outgoing communication.)  
-**porttype** is set to dst for destination.
+**porttype** is set to dst for destination.  
 **port** is the required port number. (You can have multiple rules for different ports in same file.)
 
 4. Load configurations with the command:  
