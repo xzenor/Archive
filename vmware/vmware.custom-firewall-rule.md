@@ -8,35 +8,35 @@ Note: This example uses the vi editor.
 
 ```xml
 <ConfigRoot>
-<service>
-<id>ServiceName</id>
-<rule id='0000'>
-<direction>inbound</direction>
-<protocol>tcp</protocol>
-<porttype>dst</porttype>
-<port>1234</port>
-</rule>
-<rule id='0001'>
-<direction>outbound</direction>
-<protocol>tcp</protocol>
-<porttype>dst</porttype>
-<port>1234</port>
-</rule>
-<rule id='0002'>
-<direction>inbound</direction>
-<protocol>udp</protocol>
-<porttype>dst</porttype>
-<port>1234</port>
-</rule>
-<rule id='0003'>
-<direction>outbound</direction>
-<protocol>udp</protocol>
-<porttype>dst</porttype>
-<port>1234</port>
-</rule>
-<enabled>false</enabled>
-<required>false</required>
-</service>
+  <service>
+    <id>ServiceName</id>
+    <rule id='0000'>
+      <direction>inbound</direction>
+      <protocol>tcp</protocol>
+      <porttype>dst</porttype>
+      <port>1234</port>
+    </rule>
+    <rule id='0001'>
+      <direction>outbound</direction>
+      <protocol>tcp</protocol>
+      <porttype>dst</porttype>
+      <port>1234</port>
+    </rule>
+    <rule id='0002'>
+      <direction>inbound</direction>
+      <protocol>udp</protocol>
+      <porttype>dst</porttype>
+      <port>1234</port>
+    </rule>
+    <rule id='0003'>
+      <direction>outbound</direction>
+      <protocol>udp</protocol>
+      <porttype>dst</porttype>
+      <port>1234</port>
+    </rule>
+    <enabled>false</enabled>
+    <required>false</required>
+  </service>
 </ConfigRoot>
 ```
 Where:
