@@ -1,8 +1,16 @@
-Check tunnels
-  show security ike security-associations
-  show security ipsec security-associations
-  show security ipsec inactive-tunnels
+# ipsec VPN commands
 
-Reset tunnels
-  clear security ike security-associations ip.ad.dre.ss
-  clear security ipsec security-associations index ipsec-index-ID
+* Check tunnels
+
+```junos
+show security ike security-associations
+show security ipsec security-associations
+show security ipsec inactive-tunnels
+```
+
+* Reset tunnels
+
+```junos
+clear security ike security-associations ip.ad.dre.ss
+clear security ipsec security-associations index ipsec-index-ID
+```
