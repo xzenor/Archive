@@ -1,4 +1,4 @@
-# Veryfy SSL certificate chain  
+# Verify SSL certificate chain  
 
 ```
 openssl verify -verbose -CAfile intermediate.pem  certificate.crt
