@@ -1,4 +1,4 @@
-# Disable the force smartcard login (Regedit)
+# Force smartcard login (Regedit)
 
 ## Enable
 
