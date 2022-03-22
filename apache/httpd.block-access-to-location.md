@@ -1,4 +1,4 @@
-```xml
+```
 # Forbid access to xmlrpc.php globally at server level
 <Files "xmlrpc.php">
   Require all denied
