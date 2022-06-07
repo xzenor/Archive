@@ -1,0 +1,22 @@
+# mssql get-encryption status
+
+```sql
+USE master
+GO
+
+-- this provides the list of certificates
+SELECT * FROM sys.certificates
+
+
+SELECT D.name AS 'Database Name'
+,c.name AS 'Cert Name'
+,E.encryptor_type AS 'Type'
+,case
+    when E.encryption_state = 3 then 'Encrypted'
+    when E.encryption_state = 2 then 'In Progress'
+    else 'Not Encrypted'
+end as state,
+E.encryption_state, E.percent_complete, E.key_algorithm, E.key_length, E.* FROM sys.dm_database_encryption_keys E
+right join sys.databases D on D.database_id = E.database_id
+left join sys.certificates c ON E.encryptor_thumbprint=c.thumbprint
+```
