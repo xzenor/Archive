@@ -1,14 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
-if [ -n "$1" ]; then
-  echo -n PFX Password:
-  read -s pfxpass
-  filename=${1%.*}
+BASENAME=`basename $1 .pfx`
 
-  openssl pkcs12 -in $1 -nocerts -out $filename-encrypted.key -passin pass:$pfxpass -passout pass:$pfxpass
-  openssl pkcs12 -in $1 -clcerts -nokeys -out $filename.crt -passin pass:$pfxpass
-  openssl rsa -in $filename-encrypted.key -out $filename.key -passin pass:$pfxpass
-
-else
-  echo "usage: convertpfx ./abcdefg.pfx"
-fi
+openssl pkcs12 -in $1 -nocerts -out encrypted.key -passin pass:$2 -passout pass:$2
+openssl rsa -in encrypted.key -out $BASENAME.key -passin pass:$2
+openssl pkcs12 -in $1 -clcerts -nokeys -out $BASENAME.crt  -passin pass:$2
+rm encrypted.key
