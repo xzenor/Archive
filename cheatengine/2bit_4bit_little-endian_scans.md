@@ -1,4 +1,4 @@
-# Add 2bit and 4bit Little Endian scan to Cheat Engine
+# Add 2bit and 4bit Big Endian scan to Cheat Engine
 
 
 1. Start a new scan and rightclick the variable type
