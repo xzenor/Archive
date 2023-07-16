@@ -37,3 +37,5 @@
 |%% | % | A literal '%' character.|  
 
 [source](https://strftime.org/)
+
+[sandbox](https://www.strfti.me/)
